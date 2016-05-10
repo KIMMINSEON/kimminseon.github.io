@@ -14,7 +14,7 @@ header>dl a:focus{left:0; top:0; width:100%; height:30px; text-align:center; col
 #lnb>dd>a>i{line-height:22px; margin-right: 8px; color: #aaaaaa;}
 
 /* ________#header>nav 메뉴_________________________________ */
-#header>nav{width: 100%; height: 38px; border-top:1px solid #858585; border-bottom:1px solid #858585; background-color:#ca213a; color:#fff;}
+#header>nav{width: 100%; height: 38px; border-top:1px solid #858585;/* border-bottom:1px solid #858585;*/ background-color:#ca213a; color:#fff;}
 #nav{width: 960px; height: 100%; margin: 0 auto;}
 #nav>li{width: 16.6667%; height: 100%; display: block; float: left;}
 #nav>li>a{width: 100%; height: 100%; display: block; float: left; text-align:center; line-height:38px; font-family:notoLight; font-size:0.8571rem; font-weight: bold; color: #fff;}
