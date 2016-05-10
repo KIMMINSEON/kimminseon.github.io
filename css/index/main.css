@@ -107,8 +107,13 @@
 
 /* ------#notiBox 꾸미기__________________________________________ */
 
-#notiBox {
-}
+#noti,#QA{width: 100%; height: 90px;}
+#noti{margin-bottom: 28px;}
+#noti h2,#QA h2{width: 100%; height: 21px; font-size:1.3125rem; font-weight: 700; margin-bottom: 16px; line-height: 21px; line-height:1.3125rem;}
+#noti li,#QA li{width: 100%; height: 13px; margin-bottom: 7px; overflow:hidden;}
+#noti li>a{float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:75%; font-size: 0.75rem; line-height:0.75rem; line-height: 12px;}
+#noti li .time {float:right; width:20%; height: 13px; text-align:right; font-size: 0.5625rem; line-height:0.75rem; line-height: 13px;}
+#QA li>a{float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:90%; font-size: 0.75rem; line-height:0.75rem; line-height: 12px;}
 
 
 
