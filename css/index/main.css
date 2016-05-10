@@ -57,7 +57,7 @@
 #cusBox>a>dl>dd:first-of-type{height: 25px; color: #aaaaaa; font-size: 0.75rem; margin-bottom: 37px;}
 #insBox>a>dl>dd:first-of-type{height: 25px; color: #aaaaaa; font-size: 0.75rem; margin-bottom: 37px;}
 #stoBox>a>dl>dd:last-of-type,#cusBox>a>dl>dd:last-of-type,#insBox>a>dl>dd:last-of-type{width: 100px; height: 25px; border:1px solid #dfdfdf; margin: 0 auto; color:#333; line-height:25px; font-size:0.75rem;}
-#stoBox>a>dl>dd:last-of-type:hover,#cusBox>a>dl>dd:last-of-type:hover,#franBox>a>dl>dd:last-of-type:hover,#insBox>a>dl>dd:last-of-type:hover{background-color: #555; color:#fff;}
+#stoBox>a:hover>dl>dd:last-of-type,#cusBox>a:hover>dl>dd:last-of-type,#franBox>a:hover>dl>dd:last-of-type,#insBox>a:hover>dl>dd:last-of-type{background-color: #555; color:#fff;}
 
 
 /* ------#mapBox꾸미기__________________________________________ */
