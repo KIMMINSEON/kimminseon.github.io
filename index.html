@@ -1,12 +1,359 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--	favicon -->
+    <link rel="apple-touch-icon" href="img/index/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/index/logo.png" />
+    <!--reset-->
+    <link rel="stylesheet" href="./css/lib/reset.css" />
+    <!--design-->
+    <link rel="stylesheet" href="./font-awesome-4.6.1/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/index/wrap.css" />
+    <link rel="stylesheet" href="css/index/header.css" />
+    <link rel="stylesheet" href="css/index/banner.css" />
+    <link rel="stylesheet" href="css/index/main.css" />
+    <link rel="stylesheet" href="css/index/footer.css" />
+
+    
+    <script src="js/jquery/jquery-1.12.2.min.js"></script>
+    <script src="js/jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+    
+    <!--[if lte IE 9]>
+	<script src="./js/dist/html5shiv.min.js"></script>
+	<script src="./js/dist/ie9.min.js"></script>
+	<script src="./js/dist/PIE.js"></script>
+	<script src="./js/dist/respond.min.js"></script>
+    <![endif]-->
+    
+    <title>caffe pascucci</title>
+    <style type="text/css"></style>
+    <script>
+        $(document).ready(function(){
+		  
+		});
+    </script>
 </head>
 <body>
-    <div>
-        dkdkdkdkdkdkdkdkdkkd
+    <div id="wrap">
+        <header id="header">
+            <dl>
+		        <dt class="hidden">바로가기 메뉴</dt>
+		        <dd><a href="#">본문 바로가기</a></dd>
+		        <dd><a href="#nav">주 메뉴 바로가기</a></dd>
+	        </dl>
+            <div>
+                <h1><a href="index.html">pascucci 로고 이미지</a></h1>
+                <dl id="lnb">
+			        <dt class="hidden">유틸메뉴</dt>
+			        <dd><a href="#"><i class="fa fa-lock" aria-hidden="true"></i>LOGIN</a></dd>
+			        <dd><a href="#"><i class="fa fa-star" aria-hidden="true"></i>JOIN</a></dd>
+		        </dl>
+            </div>
+            <nav>
+               <h1>메인메뉴</h1>
+                <ul id="nav">
+                    <li><a href="#">STORY</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">FRANCHISE</a></li>
+                    <li><a href="#">EVENT</a></li>
+                    <li><a href="#">STORE</a></li>
+                    <li><a href="#">CUSTOMER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ----------------//#header---------------- -->
+        <main id="contents">
+            <aside id="banner">
+                <ul class="rolling_wrap">
+                    <li><a href="#"><span>배너광고1</span></a></li>
+                    <li class="hidden"><a href="#"><span>배너광고2</span></a></li>
+                </ul>
+            </aside>
+            <!-- ----------------//#banner---------------- -->
+            <article>
+                <section id="newBest">
+                    <h1>NEW &amp; BEST</h1>
+                    <canvas id="line"></canvas>
+                    <div class="banBtn_01 banBtn">
+                        <button>왼쪽버튼</button>
+                    </div>
+                    <div class="banBtn_02 banBtn">
+                        <button>오른쪽버튼</button>
+                    </div>
+                    <input type="radio" name="inde" id="indi_01" />
+                    <input type="radio" checked="checked" name="inde" id="indi_02" />
+                    <input type="radio" name="inde" id="indi_03" />
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="hidden">스트로베리치즈케익쉐이크 제품 이미지 및 이름</dt>
+                                    <dd><img src="img/index/article/pro01.png" alt="스트로베리치즈케익쉐이크 제품 이미지" />
+                                    </dd>
+                                    <dd>스트로 베리 치즈케익쉐이크</dd>
+                                    <dd>Strawberry Cheesecake Shake</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="hidden">아이스카라멜모카 제품 이미지 및 이름</dt>
+                                    <dd><img src="img/index/article/pro02.png" alt="아이스카라멜모카 제품 이미지" /></dd>
+                                    <dd>아이스 카라멜모카</dd>
+                                    <dd>Iced Caramel Mocha</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="hidden">그라니따모카 제품 이미지 및 이름</dt>
+                                    <dd><img src="img/index/article/pro03.png"  alt="그라니따모카 제품 이미지" /></dd>
+                                    <dd>그라니따&#40;모카&#41;</dd>
+                                    <dd>Granita&#40;Mocha&#41;</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="hidden">그라니따딸기 제품 이미지 및 이름</dt>
+                                    <dd><img src="img/index/article/pro04.png" alt="그라니따딸기 제품 이미지" /></dd>
+                                    <dd>그라니따&#40;모카&#41;</dd>
+                                    <dd>Granita&#40;Strawberry&#41;</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- ----------------//#newBest---------------- -->
+                <article id="artBox">
+                    <div id="artBoxLR">
+                        <div id="artBoxL">
+                            <div id="stoBox">
+                                <a href="#">
+                                   <img src="img/index/article/sto.png" alt="파스쿠찌 로고이미지" />
+                                    <dl>
+                                        <dt>PASCUCCI BRAND</dt>
+                                        <dd>파스쿠찌의 브랜드입니다.</dd>
+                                        <dd>Detail View</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <!-- ----------------//#stoBox---------------- -->
+                            <div id="mapBox">
+                                <dl>
+                                    <dt>매장찾기</dt>
+                                    <dd>파스쿠찌의 매장을 알려드립니다.</dd>
+                                    <form action="#" method="post">
+                                        <fieldset>
+                                            <legend class="hidden">매장검색</legend>
+                                            <p>
+                                                <label for="srch" class="hidden">검색</label>
+                                                <input type="search" name="srch" id="srch" />
+                                                    <input type="image" src="img/index/article/srch.png" alt="검색" />   
+                                            </p>
+                                        </fieldset>                 
+                                    </form>
+                                </dl>
+                            </div>
+                            <!-- ----------------//#mapBox---------------- -->
+                            <div id="franBox">
+                                <a href="#">
+                                    <dl>
+                                        <dt class="hidden">가맹사업안내 간략홍보</dt>
+                                        <dd>Franchise</dd>
+                                        <dd>가맹사업 <em>안내</em></dd>
+                                        <dd></dd>
+                                        <dd>당신을 위해 130년을 기다린<br />파스쿠찌와 함께할 파트너를 모집합니다.</dd>
+                                        <dd>자세히 보기</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <!-- ----------------//#franBox---------------- -->
+                        </div>
+                        <!-- ----------------//#artBoxL---------------- -->
+                        <div id="artBoxR">
+                            <div id="cusBox">
+                                <a href="#">
+                                    <img src="img/index/article/cus.png" alt="고객센터 아이콘이미지" />
+                                    <dl>
+                                        <dt>CUSTOMER</dt>
+                                        <dd>빠른 상담으로 여러분의 궁금증을<br /> 해결해 드립니다.</dd>
+                                        <dd>문의하기</dd>
+                                    </dl>
+                                </a>
+                            </div>
+                            <!-- ----------------//#cusBox---------------- -->
+                            <div id="evtBox">
+                                <div class="evtBtn_01 evtBtn">
+                                    <button>왼쪽버튼</button>
+                                </div>
+                                <div class="evtBtn_02 evtBtn">
+                                    <button>오른쪽버튼</button>
+                                </div>
+                                <ul>
+                                    <li><a href="#"><span>이벤트광고배너01</span></a></li>
+                                    <!--<li><a href="#"><span>이벤트광고배너02</span></a></li>-->
+                                </ul>
+                            </div>
+                            <!-- ----------------//#evtBox---------------- -->
+                        </div>
+                        <!-- ----------------//#artBoxR---------------- -->
+                    </div>
+                    <!-- ----------------//#artBoxLR---------------- -->
+                    <div id="artbn">
+                        <a href="#">
+                            <span>딸기시즌 제품안내 배너이미지</span>
+                        </a>
+                    </div>
+                    <!-- ----------------//#artbn---------------- -->
+                    <div id="artBox03">
+                        <div id="notiBox">
+                            <div id="noti">
+                                <h2>Notice</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">파스쿠찌 홈페이지 개인정보취급방침 변경 안내 드립니다.</a><span class="time">2015.07.01</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">파스쿠찌 홈페이지 개인정보취급방침 변경 안내 드립니다.</a><span class="time">2015.07.01</span>
+                                    </li>
+                                    <li>
+                                        <a href="#">파스쿠찌 홈페이지 개인정보취급방침 변경 안내 드립니다.</a><span class="time">2015.07.01</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="QA">
+                                <h2>자주하는 질문</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#">점포의 예상매출과 손익은 어떻게 나오나요?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">매장의 적정평수는 어떻게 나오나요?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">파스쿠찌 가맹점 개설은 어떻게 하나요?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ----------------//#notiBox---------------- -->
+                        <div id="insBox">
+                            <a href="#">
+                                    <img src="img/index/article/ins01.png" alt="인스타그램 아이콘이미지" />
+                                    <dl>
+                                        <dt>INSTAGRAM</dt>
+                                        <dd>스토리를 마시는 일상, 스마일 파스쿠찌<br />공식 인스타그램입니다.</dd>
+                                        <dd>Detail View</dd>
+                                    </dl>
+                                </a>
+                        </div>
+                        <!-- ----------------//#insBox---------------- -->
+                        <div id="fac">
+                            
+                        </div>
+                        <!-- ----------------//#fac---------------- -->
+                    </div>
+                    <!-- ----------------//#artBox03---------------- -->
+                </article>
+                <!-- ----------------//#artBox---------------- -->
+            </article>
+        </main>
+        <!-- ----------------//#contents---------------- -->
+        <footer id="footer">
+            <div id="pasFoot">
+                <h2>파스쿠찌 웹 정보 및 로고</h2>
+                <div id="addBox">
+                    <ul class="add">
+                        <li><a href="#">해피포인트</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">윤리신고센터</a></li>
+                        <li><a href="#">거래희망사전등록</a></li>
+                    </ul>
+                    <address>
+                        <p>서울시 서초구 양재동 11-149 번지 | Tel 82 2 2276 6550 FAX 0505 073 0210 | 고객 상담 센터 080 731 2027</p>
+                        <p>COPYRIGHT 2012 THE PASCUCCI ALL RIGHTS RESERVED</p>
+                    </address>
+                </div>
+                <div id="famList">
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend class="hidden">Family Site list</legend>
+                            <label for="familySite" class="hidden">Family Site</label>
+                            <select name="familySite" id="familySite">
+                                <option value="0">Family Site</option>
+				                <option value="http://www.spc.co.kr">SPC그룹</option>
+				                <option value="http://www.dunkindonuts.co.kr/main.html">던킨도너츠</option>
+				                <option value="http://www.baskinrobbins.co.kr/main/br_main.jsp">배스킨라빈스31</option>
+				                <option value="http://www.happypointcard.com/html/main/main.jsp">해피포인트카드</option>
+				                <option value="http://www.paris.co.kr">파리바게뜨</option>
+				                <option value="http://www.pariscroissant.co.kr">파리크라상</option>
+				                <option value="http://www.happyconpoint.com">해피콘</option>
+				                <option value="http://www.lovewoorimil.com">우리밀愛</option>
+				                <option value="http://baking.paris.co.kr">(주)한불제과제빵학원</option>
+				                <option value="http://www.pascucci.it">파스쿠찌 이탈리아</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                    <dl class="snsBox">
+                        <dt class="hidden">sns</dt>
+                        <dd><a href="http://blog.naver.com/pascucci1883"><span>네이버블로그</span></a></dd>
+                        <dd><a href="https://www.facebook.com/pascucci1883"><span>페이스북</span></a></dd>
+                        <dd><a href="https://instagram.com/pascucci_kr"><span>인스타그램</span></a></dd>
+                    </dl>
+                </div>
+                <!-- ----------------//#famList---------------- -->
+            </div>
+            <!-- ----------------//#pasFoot---------------- -->
+        </footer>
+        <!-- ----------------//#footer---------------- -->
     </div>
+    <!-- ----------------//#wrap---------------- -->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
