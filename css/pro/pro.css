@@ -11,13 +11,23 @@
 
 *{font-family:notoLight;}
 
+/* 각각 박스 사이즈 지정 */
+
 .container {width: 100%; height: auto;}
 
 header{width: 100%; height: 140px;}
-main{width: 100%; height: 1344px; }
-#imgBox{width: 100%; height: 420px; background: url(../../img/brn_st/img01.png); background-repeat: no-repeat; background-size: cover; box-sizing: border-box; padding-top: 148px; margin-bottom: 68px;  transition: all 0.5s; transform:scale 1s 1; position: relative;}
-#textBox{width: 960px; height: 1200px; margin: 0 auto;}
-#textBox>div,#textBox>div>ul,#textBox>div>ul>li{transition: all 0.5s; transform:scale 1s 1;}
+main{width:960px; height: 2226px; margin: 0 auto;}
+#imgBox{width: 100%; height: 420px; background: url(../../img/pro/bn.png); background-repeat: no-repeat; background-size: cover; box-sizing: border-box; padding-top: 148px; margin-bottom: 68px;  transition: all 0.5s; transform:scale 1s 1; position: relative;}
+#textBox {width: 100%; height: 90px;}
+#menuList{width: 100%; height: 40px; border: 1px solid  #ddd; box-sizing: border-box; margin-top: 30px; margin-bottom: 68px;}
+#bnImg {width: 100%; height: 700px; background-image: url(../../img/pro/bnImg.png); background-repeat: no-repeat; background-size: cover;}
+#proBox{width: 100%; height: 1080px; margin-top: 50px;}
+#proBox>ul{width: 100%; height: 940px;}
+#proBox>ul>li{width: calc((100% - 36px) / 4); height: 226px; background-color: #ffffff; float: left; margin-right: 12px; margin-bottom: 12px; border: 1px solid  #ddd; box-sizing: border-box;}
+#proBox>ul>li:hover{}
+#proBox>ul>li:nth-of-type(4),#proBox>ul>li:nth-of-type(8),#proBox>ul>li:nth-of-type(12){margin-right: 0;}
+#proBox>ul>li:nth-of-type(13){margin-bottom: 0;}
+
 footer{width: 100%; height: 170px; background-color: #333;}
 
 @keyframes scale{
@@ -25,31 +35,34 @@ footer{width: 100%; height: 170px; background-color: #333;}
     100%{transform:scale(1)}
 }
 
-/* 각각 박스 사이즈 지정 */
+/* textBox 꾸미기 */
 
-/* 두개메뉴 */
+#textBox>h2{width: 100%; height: 50px; text-align: center; line-height: 50px; font-size: 53px; font-weight: 600;}
+#textBox>p{width: 100%; height: 40px; text-align: center; line-height: 40px; font-weight: 400; font-size: 14px;}
 
-#textBox>ul{width: 100%; height: 50px; border: 1px solid  #d4d4d4; box-sizing: border-box; background-color: #eeeeee; margin-bottom: 68px;}
-#textBox>ul>li{display:inline-block; width: 50%; height: 100%; float: left;}
-#textBox>ul>li:first-child{background-color:#d23f41; border-right: 1px solid  #d4d4d4; box-sizing: border-box;}
-#textBox>ul>li>a{display: block; width: 100%; height: 100%; text-align:center; line-height: 50px; font-size:1.3rem; font-weight:bold;}
-#textBox>ul>li:first-child>a{color:#fff;}
+/* 메뉴리스트 꾸미기 */
 
-/* 설명박스 */
+#menuList>li{width:calc(100% / 6); height: 100%; display: block; float:left; border-right: 1px solid  #ddd; box-sizing: border-box;}
+#menuList>li:last-child{border-right: 0;}
+#menuList>li>a{width: 100%; height: 100%; display: block; text-align: center; line-height: 38px; color: #333333;}
+#menuList>li:first-child>a{background-color: #e21c39; color: #fff;}
 
-#textBox>div{width: 100%; height: 330px; margin-bottom: 46px; border: 1px solid  #eaeaea; box-sizing: border-box;}
-#textBox>div>ul>li{width: 50%; height: 100%; float:left;}
-.box01>ul>li:first-child,.box02>ul>li:last-child,.box03>ul>li:first-child{border-right:1px solid  #eaeaea; box-sizing:border-box;}
-.box01>ul>li:last-child,.box02>ul>li:first-child,.box03>ul>li:last-child{padding: 40px; box-sizing:border-box;}
-#textBox>div>ul{width: 100%; height: 100%;}
+/* 제품 리스트 꾸미기 */
 
-    .box01>ul>li:first-child{background: url(../../img/brn_st/01.png); background-repeat:no-repeat; background-size:cover;}
+#proBox>ul>li>a{width: 100%; height: 100%; display: block;}
+#proBox>ul>li>a>div{width: 100%; height:151px; padding-top: 36px; box-sizing: border-box; margin-bottom: 10px;}
+#proBox>ul>li:nth-of-type(6)>a>div{padding-top: 25px;}
+#proBox>ul>li>a>div>img{margin:0 auto; display: block;}
+#proBox>ul>li>a>strong{width: 100%; height:20px; display: block; font-weight: bold; font-size: 16px; text-align: center; line-height: 20px;}
+#proBox>ul>li>a>p{width: 100%; height:24px; display: block; font-size: 12px; text-align: center; line-height: 24px; color: #888888;}
 
-    .box02>ul>li:last-child{background: url(../../img/brn_st/02.png); background-repeat:no-repeat; background-size:cover;}
+/*순서 내용 꾸미기*/
 
-    .box03 {margin-bottom: 0;}
-
-    .box03>ul>li:first-child{background: url(../../img/brn_st/03.png); background-repeat:no-repeat; background-size:cover;}
+.pageBtn{width: 100%; height: 40px; margin-top: 100px;}
+.pageBtnBox{width: 150px; height: 40px; display: block; margin: 0 auto; text-align: center;}
+.pageBtnBox>a.on{width: 40px; height: 40px; line-height:40px; float:left;  font-family:notoBold; font-size: 1rem; color: #fff; background-color:#d23f41;}
+.pageBtnBox>.pageBtn_prev{width: 40px; height: 40px; background: url(../../img/pro/prev.png); float:left; background-repeat:no-repeat; background-position:left center; margin-right: 15px;}
+.pageBtnBox>.pageBtn_next{width: 40px; height: 40px; background: url(../../img/pro/next.png); float:left; background-repeat:no-repeat; background-position:right center; margin-left: 15px;}
 
 /*img box 내용 꾸미기*/
 
@@ -57,14 +70,6 @@ footer{width: 100%; height: 170px; background-color: #333;}
 #imgBox>dl>dd:nth-of-type(1){height: 56px; color: #fff; text-align: center; line-height:56px; font-size: 70px; font-weight:900; margin-bottom: 12px; letter-spacing:6px;}
 #imgBox>dl>dd:nth-of-type(2){height: 0; border-top: 1px solid #fff; margin-bottom: 27px;}
 #imgBox>dl>dd:nth-of-type(3){text-align: center; height: 20px; line-height: 20px; color: #fff; font-size: 24px; letter-spacing:10px;}
-
-/*dl 내용 꾸미기*/
-
-#textBox>div dl{width: 100%; height: 100%;}
-#textBox>div dd:nth-of-type(1){height: 18px; line-height:18px; color: #838383; font-size:1.125rem; margin-bottom: 16px;}
-#textBox>div dd:nth-of-type(2){width: 100%; height: 65px; color: #d23f41; font-size:30px; font-weight:bold; margin-bottom: 27px;}
-#textBox>div dd:nth-of-type(3){height: 0; border-top: 1px solid #d4d4d4; margin-bottom: 21px;}
-#textBox>div dd:nth-of-type(4){font-size:15px;}
 
 /*header*/
 
