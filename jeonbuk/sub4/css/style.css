@@ -1,0 +1,570 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* -------------------- Reset CSS -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button, input {
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+img {
+  /* vertical-align: middle; */
+}
+ol, ul {
+  list-style: none;
+}
+address, i, em {
+  font-style: normal;
+}
+
+/* -------------------- Default CSS -------------------- */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #222;
+}
+.inner {
+  width: 1200px;
+  margin: auto;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* -------------------- Header -------------------- */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid #006bb7;
+  background-color: #fff;
+}
+.top-menu {
+  background-color: #f5f5f5;
+}
+.top-menu .inner {
+  overflow: hidden;
+}
+.top-menu .left {
+  float: left;
+}
+.top-menu .left li {
+  float: left;
+  height: 30px;
+  padding: 0 15px;
+  line-height: 30px;
+  border-right: 1px solid #ddd;
+  font-size: 12px;
+  color: #444;
+}
+.top-menu .left li:last-child {
+  border: none;
+}
+.top-menu .right {
+  float: right;
+}
+.top-menu .right li {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #444;
+  background-color: #e7e7e7;
+  border-right: 1px solid #dddddd;
+}
+.top-menu .right li:last-child {
+  background-color: #00B8A2;
+  color: #fff;
+  border: none;
+}
+.top-menu .right li a {
+  display: block;
+  padding: 0 15px;
+}
+
+/* gnb */
+.gnb {
+  position: relative;
+}
+.gnb:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 70px;
+  background-color: #ddd;
+}
+.gnb .inner {
+  position: relative;
+  overflow: hidden;
+}
+.gnb .logo {
+  float: left;
+}
+.gnb .logo a {
+  display: block;
+  height: 70px;
+}
+.gnb .logo a img {
+  height: inherit;
+}
+.gnb .menu {
+  float: right;
+}
+.gnb .menu > li {
+  float: left;
+  text-align: center;
+  font-weight: 500;
+}
+.gnb .menu > li > a {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 70px;
+  line-height: 70px;
+}
+.gnb .menu > li > a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #006bb7;
+  transition: 0.3s;
+}
+.gnb .menu > li:hover > a:after {
+  width: 100%;
+} 
+.gnb .depth {
+  display: none;
+}
+.gnb .depth li {
+  font-size: 14px;
+  font-weight: 400;
+}
+.gnb .depth li a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid transparent;
+  color: #888;
+  transition: 0.3s;
+}
+.gnb .depth li:hover a {
+  color: #222;
+  font-weight: 500;
+  background-color: #eee;
+}
+.gnb-bg {
+  position: absolute;
+  left: 0;
+  top: 71px;
+  width: 100%;
+  display: none;
+}
+.gnb-bg.active {
+  display: block;
+  opacity: 1;
+}
+.gnb-bg img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.gnb-bg .inner > div {
+  width: 280px;
+  padding: 30px 20px 0;
+}
+.gnb-bg .gnb-num {
+  margin-top: 30px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+.gnb-bg span {
+  margin-top: 11px;
+  float: left;
+  font-weight: 500;
+  color: #aaa;
+}
+.gnb-bg strong {
+  float: right;
+  font-size: 30px;
+  color: #006bb7;
+}
+
+/* -------------------- sub visual -------------------- */
+.sub-visual {
+  position: relative;
+  height: 400px;
+  background: url(../img/visual-bg.jpg) no-repeat center center / cover;
+  color: #fff;
+  text-align: center;
+}
+.sub-visual:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+.sub-visual .tit{
+  position: absolute;
+  top: calc((100% + 102px) / 2);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-visual .tit h2 {
+  font-size: 40px;
+  font-weight: 700;
+  animation: fadeTextDown 1s both;
+}
+.sub-visual .tit p{
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #eee;
+  animation: fadeTextDown 1s .4s both;
+}
+@keyframes fadeTextDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------- contnet -------------------- */
+.content {
+  margin-bottom: 120px;
+}
+.content .inner {
+  margin-top: 90px;
+  overflow: hidden;
+}
+.content .inner > div {
+  float: left;
+}
+.content .inner > div:nth-of-type(2) {
+  width: calc(100% - 300px);
+}
+.content .inner > div:nth-of-type(2) h2 {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .inner > div:nth-of-type(2) h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #006bb7;
+}
+/* left-menu */
+.left-menu {
+  width: 240px;
+  margin-right: 60px;
+}
+.left-menu h3 {
+  height: 55px;
+  padding-left: 20px;
+  line-height: 55px;
+  background-color: #006bb7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.left-menu ul li {
+  height: 55px;
+  line-height: 55px;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+.left-menu ul li.on {
+  background-color: #ededed;
+}
+.left-menu ul li:hover {
+  background-color: #ededed;
+}
+.left-menu ul li a {
+  display: block;
+  padding-left: 20px;
+}
+
+/* health content */
+.health-box .search-top{
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.health-box .search-top p {
+  position: relative;
+  line-height: 45px;
+  float: left;
+  padding-left: 10px;
+}
+.health-box .search-top p:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #006bb7;
+}
+.health-box .search-top span {
+  color: #006bb7;
+}
+.health-box .search-box {
+  display: inline-block;
+  float: right;
+}
+.health-box .search-box select {
+  width: 120px;
+  height: 45px;
+  padding: 0 10px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.health-box input {
+  width: 250px;
+  height: 45px;
+  padding-left: 15px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.health-box button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  vertical-align: middle;
+  font-size: 20px;
+  background-color: #006bb7;
+  color: #fff;
+  cursor: pointer;
+}
+.health-list {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #006bb7;
+}
+.health-list caption {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+.health-list th {
+  padding: 15px 10px;
+  border-bottom: 1px solid #aaa;
+}
+.health-list td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+.health-list .txt-left {
+  text-align: left;
+}
+.health-list a:hover {
+  text-decoration: underline;
+}
+.page-list {
+  margin-top: 40px;
+  text-align: center;
+}
+.page-list a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ddd;
+}
+.page-list a.on {
+  background-color: #006bb7;
+  color: #fff;
+}
+.page-list a i {
+  transform: translateY(-2px);
+}
+
+/* -------------------- footer -------------------- */
+footer {
+  padding: 30px 0 85px;
+  background-color: #3a3d44;
+  color: #fff;
+}
+footer .inner {
+  overflow: hidden;
+}
+footer .inner > div {
+  float: left;
+  padding: 15px 0;
+  border-right: 1px solid #666;
+}
+footer .addr {
+  width: 40%;
+}
+footer .addr ul {
+  margin-bottom: 20px;
+}
+footer .addr ul li {
+  display: inline-block;
+  padding-right: 17px;
+  margin-left: 15px;
+  border-right: 1px solid #aaa;
+  font-size: 14px;
+}
+footer .addr ul li:first-child {
+  margin-left: 0;
+}
+footer .addr ul li:last-child {
+  border: none;
+}
+footer .addr ul li a {
+  font-size: 13px;
+}
+footer .addr ul li a:hover {
+  text-decoration: underline;
+}
+footer .addr address {
+  font-size: 13px;
+  margin-bottom: 30px;
+  font-weight: 40;
+  color: #ddd;
+}
+footer .addr div a {
+  margin-right: 5px;
+}
+footer .addr div a img {
+  margin-right: 5px;
+  height: 40px;
+}
+footer .phone {
+  width: 30%;
+  text-align: center;
+}
+footer .phone h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+footer .phone strong {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+footer .phone p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ddd;
+}
+footer .family {
+  width: 30%;
+  color: #ccc;
+  border: none !important;
+}
+footer .family > * {
+  float: left;
+  /* border: 1px solid #000; */
+}
+footer .family h4 {
+  width: 40%;
+  text-align: right;
+}
+footer .family ul {
+  width: 60%;
+  padding-left: 30px;
+}
+footer .family ul li {
+  line-height: 1.6em;
+}
+footer .family ul li a {
+  font-weight: 300;
+  font-size: 14px;
+}
+footer .family ul li a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------- bt-menubar -------------------- */
+.bt-menubar {
+  display: none;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #262a32;
+  color: #fff;
+}
+.bt-menubar .inner > div {
+  height: 55px;
+}
+.menubar-box {
+  width: calc(100% - 110px);
+  float: left;
+}
+.menubar-box a {
+  float: left;
+  padding: 0 44.4px;
+  text-align: center;
+  line-height: 55px;
+  transition: 0.3s;
+}
+.menubar-box a:hover {
+  background-color: #0AB0CF;
+}
+.menubar-icon a {
+  float: left;
+  width: 55px;
+  padding: 5px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.123);
+  height: inherit;
+  text-align: center;
+  background-color: #14171a;
+  transition: 0.3s;
+}
+.menubar-icon a:last-child {
+  border: none;
+}
+.menubar-icon a:hover {
+  background-color: #0AB0CF;
+}
+.menubar-icon a i {
+  width: 100%;
+}
+.menubar-icon a span {
+  font-size: 12px;
+  margin-top: -20px;
+}
