@@ -275,7 +275,7 @@ header {
   cursor: pointer;
 }
 .slide-container .slick-arrow:before {
-  font-family: 'xeicon';
+  font-family : xeicon;
   font-size: 70px;
   color: #fff;
 }
