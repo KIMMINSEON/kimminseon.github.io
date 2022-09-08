@@ -6,7 +6,7 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* XEION CDN */
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url('//cdn.jsdelivr.net/xeicon/2/xeicon.min.css');
 
 /* -------------------- Reset CSS -------------------- */
 * {
