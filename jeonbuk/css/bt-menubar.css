@@ -1,0 +1,60 @@
+/* -------------------- bt-menubar -------------------- */
+.bt-menubar {
+  display: none;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background-color: #262a32;
+  color: #fff;
+}
+
+.bt-menubar .inner>div {
+  height: 55px;
+  text-align: center;
+}
+
+.menubar-box {
+  width: calc(100% - 110px);
+  float: left;
+}
+
+.menubar-box a {
+  float: left;
+  padding: 0 44.4px;
+  font-weight: 400;
+  line-height: 55px;
+  transition: 0.3s;
+}
+
+.menubar-box a:hover {
+  background-color: #0AB0CF;
+}
+
+.menubar-icon a {
+  float: left;
+  width: 55px;
+  padding: 5px 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.123);
+  height: inherit;
+  background-color: #14171a;
+  transition: 0.3s;
+}
+
+.menubar-icon a:last-child {
+  border: none;
+}
+
+.menubar-icon a:hover {
+  background-color: #0AB0CF;
+}
+
+.menubar-icon a i {
+  display: block;
+  margin-top: 4px;
+}
+
+.menubar-icon a span {
+  font-size: 12px;
+}

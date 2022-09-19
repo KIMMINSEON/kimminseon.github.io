@@ -1,0 +1,120 @@
+/* -------------------- footer -------------------- */
+footer {
+  padding: 30px 0 85px;
+  background-color: #3a3d44;
+  color: #fff;
+}
+
+footer .inner {
+  overflow: hidden;
+}
+
+footer .inner>div {
+  float: left;
+  padding: 15px 0;
+  border-right: 1px solid #666;
+}
+
+footer .addr {
+  width: 40%;
+}
+
+footer .addr ul {
+  margin-bottom: 20px;
+}
+
+footer .addr ul li {
+  display: inline-block;
+  padding-right: 17px;
+  margin-left: 15px;
+  border-right: 1px solid #aaa;
+  font-size: 14px;
+}
+
+footer .addr ul li:first-child {
+  margin-left: 0;
+}
+
+footer .addr ul li:last-child {
+  border: none;
+}
+
+footer .addr ul li a {
+  font-size: 13px;
+}
+
+footer .addr ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .addr address {
+  font-size: 13px;
+  margin-bottom: 30px;
+  font-weight: 40;
+  color: #ddd;
+}
+
+footer .addr div a {
+  margin-right: 5px;
+}
+
+footer .addr div a img {
+  margin-right: 5px;
+  height: 40px;
+}
+
+footer .phone {
+  width: 30%;
+  text-align: center;
+}
+
+footer .phone h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+footer .phone strong {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+footer .phone p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ddd;
+}
+
+footer .family {
+  width: 30%;
+  color: #ccc;
+  border: none !important;
+}
+
+footer .family>* {
+  float: left;
+  /* border: 1px solid #000; */
+}
+
+footer .family h4 {
+  width: 40%;
+  text-align: right;
+}
+
+footer .family ul {
+  width: 60%;
+  padding-left: 30px;
+}
+
+footer .family ul li {
+  line-height: 1.6em;
+}
+
+footer .family ul li a {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+footer .family ul li a:hover {
+  text-decoration: underline;
+}
