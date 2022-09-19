@@ -183,7 +183,7 @@
     <div class="bt-menubar-include"></div>
   </div>
   <script>
-    $('.header-include').load('/jeonbuk/header.html', function () {
+    $('.header-include').load('/jeonbuk/include/header.html', function () {
       // gnb menu height 주기
       var gnbH = $(".depth").height();
       $(".gnb-bg").css({ height: gnbH });
@@ -198,7 +198,7 @@
         $(".gnb-bg").stop().slideUp();
       });
     })
-    $('.bt-menubar-include').load('/jeonbuk/bt-menubar.html', function () {
+    $('.bt-menubar-include').load('/jeonbuk/include/bt-menubar.html', function () {
       // scroll show bt-menubar
       $(window).scroll(function () {
         var scrollT = $(window).scrollTop();
@@ -215,7 +215,7 @@
         return false;
       });
     })
-    $('.footer-include').load('/jeonbuk/footer.html')
+    $('.footer-include').load('/jeonbuk/include/footer.html')
   </script>
 </body>
 </html>
