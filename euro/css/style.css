@@ -251,7 +251,7 @@ header h1 a img {
 }
 .gnb .depth li {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.07);
-  transition: 0.3s;
+  margin-top: -1px;
 }
 .gnb .depth li:hover {
   color: #0095c6;
