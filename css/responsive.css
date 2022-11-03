@@ -303,6 +303,10 @@
   .qa .tit h3 {
     font-size: 22px;
   }
+  .notice ul,
+  .qa ul {
+    padding: 20px;
+  }
   /* ###### thema ###### */
   .thema .list-info {
     padding: 30px 20px;
