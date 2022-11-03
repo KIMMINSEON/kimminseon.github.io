@@ -15,7 +15,7 @@ $(function () {
   });
 
   // mobile menu
-  var menuList = $(".mobile-menu .menu > li > div, .mobile-menu .menu > li > a");
+  var menuList = $(".mobile-menu .main-menu div, .mobile-menu .main-menu a");
 
   $(".open-btn").click(function () {
     $("body").addClass("notscroll");
@@ -25,14 +25,18 @@ $(function () {
       $("body").removeClass("notscroll");
       $(".mobile-menu, .menu-bg").removeClass("active");
       menuList.removeClass("active");
+      $(".depth").hide();
     }
   );
   menuList.click(function () {
     menuList.removeClass("active");
     $(this).addClass("active");
+    $(".depth").hide();
+    $(this).parents().siblings(".depth").show();
   });
   $(".mobile-menu .menu > li > a, .mobile-menu .depth a").click(function(){
     menuList.removeClass("active");
+    $(".depth").hide();
   });
 
   // main-visual slick slider
