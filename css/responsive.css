@@ -1,0 +1,385 @@
+/* width 1400px 미만 */
+@media (max-width: 1399px) {
+  /* ###### default css ###### */
+  .inner {
+    max-width: 1400px;
+    padding: 0 20px;
+  }
+  /* ###### top banner ###### */
+  .top-banner .inner i.xi-close {
+    right: 20px;
+  }
+  /* ###### header ###### */
+  header .inner {
+    gap: 10%;
+  }
+  .gnb {
+    flex: 1;
+  }
+  .gnb > li {
+    flex: 1;
+    width: auto;
+  }
+  .gnb > li > a {
+    font-size: 16px;
+  }
+  /* ###### main-visual ###### */
+  .main-visual .main-slide .inner:before {
+    left: 20px;
+  }
+  .main-visual .slick-arrow.slick-prev {
+    left: 50px !important;
+  }
+  .main-visual .slick-arrow.slick-next {
+    left: 79px !important;
+  }
+  .main-visual .playbtn {
+    left: 108px !important;
+  }
+  /* ###### community ###### */
+  .commu-video,
+  .commu-visual{
+    height: 420px; 
+  }
+  /* visual */
+  .commu-visual .slide div {
+    width: 80%;
+    top: 40px;
+    left: 30px;
+  }
+  /* visual slick slide */
+  .commu-visual .slick-dots {
+    bottom: 20px;
+  }
+  /* ###### thema ###### */
+  .thema .list-img {
+    height: 200px;
+  }
+  /* ###### review ###### */
+  .review-box .slide{
+    gap: 30px;
+    padding: 50px 30px;
+  }
+  .review-img{
+    width: 150px;
+    height: 150px;
+  }
+}
+/* width 1024px 미만 */
+@media (max-width: 1023px) {
+  /* ###### default css ###### */
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+  }
+  /* ###### header ###### */
+  header .inner {
+    align-items: center;
+  }
+  .gnb {
+    display: none;
+  }
+  .open-btn {
+    display: block;
+  }
+
+  /* ###### best ###### */
+  .best-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .best-items .item a {
+    height: 350px;
+    overflow: hidden;
+  }
+  .best-items .item .info h3 {
+    font-size: 26px;
+  }
+  .best-items .item .info strong {
+    font-size: 32px;
+  }
+  /* ###### community ###### */
+  .community .inner > div:not(.tit) {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .community .inner > div > div {
+    width: 100%;
+  }
+  /* video */
+  .commu-video,
+  .commu-visual{
+    margin-bottom: 0;
+  }
+  .commu-video a i.xi-play {
+    font-size: 70px;
+    color: #0095c6;
+    transition: 0.5s;
+  }
+  .commu-video a i.xi-play:after {
+    width: 90px;
+    height: 90px;
+  }
+  /* video featherlight */
+  .featherlight {
+    padding: 20% 10%;
+  }
+  /* visual */
+  .commu-visual .slide div {
+    top: 60px;
+    left: 30px;
+  }
+  .commu-visual .slide a h3 {
+    font-size: 26px;
+  }
+  /* notice qa 공통 */
+  .notice .tit h3,
+  .qa .tit h3 {
+    font-size: 26px;
+  }
+  /* ###### thema ###### */
+  .thema .list-tit {
+    flex-wrap: wrap;
+  }
+  .thema .list-tit li {
+    width: calc(100% / 3);
+  }
+  .thema .list-tit li:nth-child(1),
+  .thema .list-tit li:nth-child(2),
+  .thema .list-tit li:nth-child(3) {
+    border-bottom: 1px solid #ddd;
+  }
+  .thema .list-tit li:nth-child(3) {
+    border-right: none;
+  }
+  .thema .list-tab {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .thema .list-tab > div {
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 20px;
+  }
+  .thema .list-tab > div:nth-child(odd) {
+    margin-right: 20px;
+  }
+  /* ###### review ###### */
+  .review-box .slide{
+    gap: 50px;
+    padding: 50px 30px;
+  }
+  .review-box .slide1,
+  .review-box .slide3 {
+    margin-right: 0;
+  }
+  .review-box .slide2,
+  .review-box .slide4 {
+    margin-left: 0;
+  }
+  .review-img{
+    width: 180px;
+    height: 180px;
+  }
+  .review-info strong {
+    font-size: 26px;
+  }
+  .review-info p {
+    min-height: 120px;
+  }
+}
+/* width 768px 미만 */
+@media (max-width: 767px) {
+  /* ###### default css ###### */
+  .content section {
+    padding: 40px 0 80px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  /* 공통 tit */
+  .inner > .tit {
+    padding-top: 35px;
+    margin-bottom: 40px;
+  }
+  .inner > .tit p {
+    font-size: 14px;
+  }
+  .inner > .tit:before {
+    height: 20px;
+  }
+  /* ###### top-baneer ###### */
+  .top-banner .inner a {
+    font-size: 22px;
+  }
+  /* ###### top-menu ###### */
+  .top-menu {
+    display: none;
+  }
+  /* ###### header ###### */
+  header .inner {
+    height: 60px;
+  }
+  header h1 a img {
+    height: 20px;
+  }
+  /* ###### main-visual ###### */
+  .main-visual .main-slide .inner {
+    height: 380px;
+  }
+  .main-visual .main-slide .inner:before {
+    width: 350px;
+    height: 240px;
+  }
+  .main-visual .main-slide .txt {
+    width: 280px;
+    transform: translateY(-90px);
+  }
+  .main-visual .main-slide .txt h2 {
+    font-size: 26px;
+  }
+  .main-visual .main-slide .txt p {
+    font-size: 14px;
+  }
+  /* main visual slick arrow & play stop */
+  .main-visual .slick-arrow,
+  .main-visual .playbtn {
+    transform: translateY(60px);
+  }
+  /* ###### best ###### */
+  .best-items .item a {
+    height: 250px;
+  }
+  .best-items .item a:before {
+    height: 150px;
+  }
+  .best-items .item .info {
+    top: 45px;
+  }
+  .best-items .item .info h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .best-items .item .info strong {
+    font-size: 22px;
+  }
+  /* ###### community ###### */
+  /* video */
+  .commu-video {
+    height: 250px;
+  }
+  /* video featherlight */
+  .featherlight {
+    padding: 40% 10%;
+  }
+  .featherlight .featherlight-close-icon {
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .commu-visual {
+    height: 380px;
+  }
+  /* visual */
+  .commu-visual .slide a em {
+    margin-bottom: 15px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+  }
+  .commu-visual .slide a h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  /* notice qa 공통 */
+  .notice .tit,
+  .qa .tit {
+    height: 70px;
+  }
+  .notice .tit h3,
+  .qa .tit h3 {
+    font-size: 22px;
+  }
+  /* ###### thema ###### */
+  .thema .list-info {
+    padding: 30px 20px;
+  }
+  .thema .product-name {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .thema .price {
+    font-size: 22px;
+  }
+  /* ###### review ###### */
+  .review-box .slide {
+    gap: 30px;
+  }
+  .review-img {
+    width: 130px;
+    height: 130px;
+  }
+  .review-info em {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .review-info strong {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  /* ###### footer ###### */
+  footer {
+    font-size: 14px;
+  }
+  footer .cs div i {
+    font-size: 30px;
+  }
+  footer .cs div span {
+    font-size: 26px;
+  }
+}
+/* width 576px 미만 */
+@media (max-width: 575px) {
+  /* ###### mobile menu ###### */
+  .mobile-menu .menu-box {
+    width: 80%;
+  }
+  .main-visual .main-slide .inner:before {
+    width: 85%;
+  }
+  .main-visual .main-slide .txt {
+    width: 60%;
+  }
+  /* ###### thema ###### */
+  .thema .list-tit li {
+    width: calc(100% / 2);
+  }
+  .thema .list-tit li:nth-child(odd) {
+    border-right: 1px solid #ddd;
+  }
+  .thema .list-tit li:nth-child(even) {
+    border-right: none;
+  }
+  .thema .list-tit li:nth-child(1),
+  .thema .list-tit li:nth-child(2),
+  .thema .list-tit li:nth-child(3),
+  .thema .list-tit li:nth-child(4) {
+    border-bottom: 1px solid #ddd;
+  }
+  .thema .list-tab > div {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  /* ###### review ###### */
+  .review-box .slide {
+    flex-direction: column;
+    align-items: center;
+  }
+  .review-info {
+    text-align: center;
+  }
+}
