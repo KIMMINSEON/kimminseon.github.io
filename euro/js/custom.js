@@ -34,7 +34,7 @@ $(function () {
     $(".depth").hide();
     $(this).parents().siblings(".depth").show();
   });
-  $(".mobile-menu .menu > li > a, .mobile-menu .depth a").click(function(){
+  $(".mobile-menu .main-menu a, .mobile-menu .depth a").click(function () {
     menuList.removeClass("active");
     $(".depth").hide();
   });

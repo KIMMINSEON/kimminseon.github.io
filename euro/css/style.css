@@ -501,6 +501,7 @@ header h1 a img {
 .main-visual .main-slide .txt p {
   line-height: 1.3em;
   opacity: 0;
+  word-break: keep-all;
 }
 
 /* main visual slick arrow */

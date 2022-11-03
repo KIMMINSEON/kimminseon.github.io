@@ -297,10 +297,15 @@
   .notice .tit,
   .qa .tit {
     height: 70px;
+    padding: 0 20px;
   }
   .notice .tit h3,
   .qa .tit h3 {
     font-size: 22px;
+  }
+  .notice ul,
+  .qa ul {
+    padding: 20px;
   }
   /* ###### thema ###### */
   .thema .list-info {
