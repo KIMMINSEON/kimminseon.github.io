@@ -1,4 +1,4 @@
-/* width 1400px 미만 */
+/* ###### width 1400px ###### 미만 */
 @media (max-width: 1399px) {
   /* ###### default css ###### */
   .inner {
@@ -65,7 +65,7 @@
     height: 150px;
   }
 }
-/* width 1024px 미만 */
+/* ###### width 1024px 미만 ###### */
 @media (max-width: 1023px) {
   /* ###### default css ###### */
   h2 {
@@ -188,7 +188,7 @@
     min-height: 120px;
   }
 }
-/* width 768px 미만 */
+/* ###### width 768px 미만 ###### */
 @media (max-width: 767px) {
   /* ###### default css ###### */
   .content section {
@@ -346,7 +346,7 @@
     font-size: 26px;
   }
 }
-/* width 576px 미만 */
+/* ###### width 576px 미만 ###### */
 @media (max-width: 575px) {
   /* ###### mobile menu ###### */
   .mobile-menu .menu-box {
